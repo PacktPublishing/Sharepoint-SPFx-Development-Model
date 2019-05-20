@@ -1,0 +1,21 @@
+{
+  "solution": {
+    "name": "app-customizer-demo-client-side-solution",
+    "id": "00823230-88b8-458e-ac35-2854adc72af3",
+    "version": "1.0.0.0",
+    "features": [{
+      "title": "Application Extension - Deployment of custom action.",
+      "description": "Deploys a custom action with ClientSideComponentId association",
+      "id": "456da147-ced2-3036-b564-8dad5c1c2e34",
+      "version": "1.0.0.0",
+      "assets": {        
+        "elementManifests": [
+          "elements.xml"
+        ]
+      }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/app-customizer-demo.sppkg"
+  }
+}

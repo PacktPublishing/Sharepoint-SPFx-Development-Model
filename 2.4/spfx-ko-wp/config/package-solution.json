@@ -1,0 +1,16 @@
+{
+  "solution": {
+    "name": "spfx-ko-wp-client-side-solution",
+    "id": "4e3a267a-0196-4d48-9e95-d057492cf945",
+    "version": "1.0.0.0",
+    "features": [{
+      "title": "spfx-ko-wp-client-side-solution assets", "description": "fields, content types and lists",
+          "id": "e6f65c75-6669-436a-9f06-5e1e25a2fe58", "version": "1.0.0.0",
+          "assets": { "elementManifests": [ "elements.xml" ], 
+          "elementFiles": [ "areasSchema.xml", "feedbackSchema.xml" ] }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-ko-wp.sppkg"
+  }
+}

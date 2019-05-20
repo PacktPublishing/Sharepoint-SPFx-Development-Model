@@ -1,0 +1,71 @@
+<div data-bind="attr: {class:spFxKoFeedbackClass}">
+  <div data-bind="attr: {class:containerClass}">
+
+    <div data-bind="attr: {class:rowClass}">
+      <div class="ms-Grid-col ms-u-sm12">
+        <span class="ms-font-xl ms-fontColor-white ms-fontWeight-semibold" data-bind="text: description"></span>
+      </div>
+    </div>
+
+    <div data-bind="attr: {class:rowClass}">
+      <div class="ms-Grid-col ms-u-sm4">
+        <span class="ms-font-l ms-fontColor-white ms-fontWeight-semibold">Title</span>
+      </div>
+      <div class="ms-Grid-col ms-u-sm4">
+        <span class="ms-font-l ms-fontColor-white ms-fontWeight-semibold">Area</span>
+      </div>
+      <div class="ms-Grid-col  ms-u-sm4">
+        <span class="ms-font-l ms-fontColor-white ms-fontWeight-semibold">Message</span>
+      </div>
+    </div>
+
+    <!-- ko foreach: feedbackItems -->
+    <div data-bind="attr: {class:$parent.rowClass}">
+      <div class="ms-Grid-col ms-u-sm4">
+        <span class="ms-font-l ms-fontColor-white" data-bind="text: Title"></span>
+      </div>
+      <div class="ms-Grid-col  ms-u-sm3">
+        <span data-bind="if: $data.Area">
+          <span class="ms-font-l ms-fontColor-white" data-bind="text: Area.Title"></span>
+        </span>
+      </div>
+      <div class="ms-Grid-col ms-u-sm4">
+        <span class="ms-font-l ms-fontColor-white" data-bind="text: Message"></span>
+      </div>
+      <div class="ms-Grid-col  ms-u-sm1">
+        <i class="ms-Icon ms-Icon--Delete" aria-hidden="true" data-bind="click: $parent.deleteFeedbackItem.bind($parent, $data)"></i>
+      </div>
+    </div>
+    <!-- /ko -->
+
+    <div data-bind="attr: {class:rowClass}">
+      <div class="ms-Grid-col  ms-u-sm12">
+        <span class="ms-font-l ms-fontColor-white ms-fontWeight-semibold">Add New</span>
+      </div>
+    </div>
+
+    <div data-bind="attr: {class:rowClass}">
+      <form data-bind="submit: addFeedbackItem">
+        <div class="ms-Grid-col ms-u-sm3">
+          <input style="color: black;" class="ms-TextField-field" 
+          placeholder="Title" 
+          data-bind='value: newFeedbackTitle, valueUpdate: "afterkeydown"' />
+        </div>
+        <div class="ms-Grid-col ms-u-sm4">
+          <select style="max-width: 180px" data-bind="options: areaItems,
+            optionsText: 'Title',
+            value: newFeedbackAreaId,"></select>
+        </div>
+        <div class="ms-Grid-col ms-u-sm3">
+          <input class="ms-TextField-field" 
+          style="color: black;" placeholder="Message" data-bind='value: newFeedbackMessage, valueUpdate: "afterkeydown"' />
+        </div>
+
+        <div class="ms-Grid-col ms-u-sm2">
+          <button class="ms-Button--default ms-Button" type="submit" data-bind="enable: newFeedbackTitle().length > 0 && newFeedbackMessage().length > 0"><span class="ms-Button-label">Add</span></button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

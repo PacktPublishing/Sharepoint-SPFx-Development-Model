@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction 
+        Title="SPFxApplicationCustomizer"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="f506e188-d16b-406c-aef0-30d78b572a9e"
+        ClientSideComponentProperties="{&quot;Header&quot;:&quot;Header area of the page&quot;}">
+    </CustomAction>
+</Elements>

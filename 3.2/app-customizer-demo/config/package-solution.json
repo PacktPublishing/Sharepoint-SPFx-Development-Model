@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "app-customizer-demo-client-side-solution",
+    "id": "00823230-88b8-458e-ac35-2854adc72af3",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/app-customizer-demo.sppkg"
+  }
+}

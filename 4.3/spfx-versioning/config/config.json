@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/spfxVersioningDemo/SpfxVersioningDemoWebPart.js",
+      "manifest": "./src/webparts/spfxVersioningDemo/SpfxVersioningDemoWebPart.manifest.json",
+      "outputPath": "./dist/spfx-versioning-demo.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "spfxVersioningDemoStrings": "webparts/spfxVersioningDemo/loc/{locale}.js"
+  }
+}

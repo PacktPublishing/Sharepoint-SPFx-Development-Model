@@ -1,0 +1,30 @@
+{
+    "solution": {
+        "name": "spfx-versioning-client-side-solution",
+        "id": "fd8ee1e2-4c1f-447e-ac51-e4f50940d305",
+        "version": "1.0.0.0",
+        "features": [
+            {
+                "title": "spfx-versioning-client-side-solution-feature",
+                "description": "...",
+                "id": "3f244e35-de90-4a5f-8f92-60aa1c8d00ff",
+                "version": "1.0.0.0",
+                "assets": {
+                    "elementManifests": [
+                        "elements.xml",
+                        "elements-v2.xml"
+                    ],
+                    "elementFiles": [
+                        "schema.xml"
+                    ],
+                    "upgradeActions": [
+                        "upgrade-actions-v2.xml"
+                    ]
+                }
+            }
+        ]
+    },
+    "paths": {
+        "zippedPackage": "solution/spfx-versioning.sppkg"
+    }
+}

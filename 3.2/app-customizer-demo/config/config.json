@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/extensions/feedbackAppCustomizer/FeedbackAppCustomizerApplicationCustomizer.js",
+      "manifest": "./src/extensions/feedbackAppCustomizer/FeedbackAppCustomizerApplicationCustomizer.manifest.json",
+      "outputPath": "./dist/feedback-app-customizer.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "feedbackAppCustomizerStrings": "extensions/feedbackAppCustomizer/loc/{locale}.js"
+  }
+}

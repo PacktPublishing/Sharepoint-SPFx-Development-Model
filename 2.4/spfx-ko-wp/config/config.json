@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/spFxKoFeedback/SpFxKoFeedbackWebPart.js",
+      "manifest": "./src/webparts/spFxKoFeedback/SpFxKoFeedbackWebPart.manifest.json",
+      "outputPath": "./dist/sp-fx-ko-feedback.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "spFxKoFeedbackStrings": "webparts/spFxKoFeedback/loc/{locale}.js"
+  }
+}
